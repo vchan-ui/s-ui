@@ -39,11 +39,11 @@ Backup of [alireza0/s-ui](https://github.com/alireza0/s-ui) v1.4.1
 
 ### Linux/macOS
 ```sh
-bash <(curl -Ls https://raw.githubusercontent.com/admin8800/s-ui/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/vchan-ui/s-ui/main/install.sh)
 ```
 
 ### Windows
-1. 从 [GitHub Releases](https://github.com/admin8800/s-ui/releases/latest) 下载最新 Windows 版本。
+1. 从 [GitHub Releases](https://github.com/vchan-ui/s-ui/releases/latest) 下载最新 Windows 版本。
 2. 解压 ZIP 文件。
 3. 以管理员身份运行 `install-windows.bat`。
 4. 按照安装向导操作。
@@ -56,8 +56,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/admin8800/s-ui/main/install.sh
 ## 手动安装
 
 ### Linux/macOS
-1. 根据你的系统和架构，从 GitHub 获取最新版本 S-UI：[https://github.com/admin8800/s-ui/releases/latest](https://github.com/admin8800/s-ui/releases/latest)
-2. **可选：** 获取最新版 `s-ui.sh`：[https://raw.githubusercontent.com/admin8800/s-ui/main/s-ui.sh](https://raw.githubusercontent.com/admin8800/s-ui/main/s-ui.sh)
+1. 根据你的系统和架构，从 GitHub 获取最新版本 S-UI：[https://github.com/vchan-ui/s-ui/releases/latest](https://github.com/vchan-ui/s-ui/releases/latest)
+2. **可选：** 获取最新版 `s-ui.sh`：[https://raw.githubusercontent.com/vchan-ui/s-ui/main/s-ui.sh](https://raw.githubusercontent.com/vchan-ui/s-ui/main/s-ui.sh)
 3. **可选：** 将 `s-ui.sh` 复制到 `/usr/bin/`，并执行 `chmod +x /usr/bin/s-ui`。
 4. 将 s-ui tar.gz 文件解压到你选择的目录，并进入解压后的目录。
 5. 将 `*.service` 文件复制到 `/etc/systemd/system/`，然后执行 `systemctl daemon-reload`。
@@ -65,7 +65,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/admin8800/s-ui/main/install.sh
 7. 使用 `systemctl enable sing-box --now` 启动 sing-box 服务。
 
 ### Windows
-1. 从 GitHub 获取最新 Windows 版本：[https://github.com/admin8800/s-ui/releases/latest](https://github.com/admin8800/s-ui/releases/latest)
+1. 从 GitHub 获取最新 Windows 版本：[https://github.com/vchan-ui/s-ui/releases/latest](https://github.com/vchan-ui/s-ui/releases/latest)
 2. 下载适合的 Windows 包，例如 `s-ui-windows-amd64.zip`。
 3. 将 ZIP 文件解压到你选择的目录。
 4. 以管理员身份运行 `install-windows.bat`。
@@ -106,7 +106,7 @@ curl -fsSL https://get.docker.com | sh
 ```shell
 services:
   s-ui:
-    image: ghcr.io/admin8800/s-ui
+    image: ghcr.io/vchan-ui/s-ui
     container_name: s-ui
     hostname: "s-ui"
     network_mode: host
@@ -128,13 +128,13 @@ docker run -itd \
     -v $PWD/cert/:/root/cert/ \
     --name s-ui \
     --restart=unless-stopped \
-    ghcr.io/admin8800/s-ui
+    ghcr.io/vchan-ui/s-ui
 ```
 
 > 自行构建镜像
 
 ```shell
-git clone https://github.com/admin8800/s-ui
+git clone https://github.com/vchan-ui/s-ui
 docker build -t s-ui .
 ```
 
@@ -153,7 +153,7 @@ docker build -t s-ui .
 ### 克隆仓库
 ```shell
 # 克隆仓库
-git clone https://github.com/admin8800/s-ui
+git clone https://github.com/vchan-ui/s-ui
 ```
 
 ### - 前端

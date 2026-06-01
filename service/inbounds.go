@@ -6,10 +6,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/admin8800/s-ui/database"
-	"github.com/admin8800/s-ui/database/model"
-	"github.com/admin8800/s-ui/util"
-	"github.com/admin8800/s-ui/util/common"
+	"github.com/vchan-ui/s-ui/database"
+	"github.com/vchan-ui/s-ui/database/model"
+	"github.com/vchan-ui/s-ui/util"
+	"github.com/vchan-ui/s-ui/util/common"
 
 	"gorm.io/gorm"
 )

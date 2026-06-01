@@ -12,11 +12,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/admin8800/s-ui/cmd/migration"
-	"github.com/admin8800/s-ui/config"
-	"github.com/admin8800/s-ui/database/model"
-	"github.com/admin8800/s-ui/logger"
-	"github.com/admin8800/s-ui/util/common"
+	"github.com/vchan-ui/s-ui/cmd/migration"
+	"github.com/vchan-ui/s-ui/config"
+	"github.com/vchan-ui/s-ui/database/model"
+	"github.com/vchan-ui/s-ui/logger"
+	"github.com/vchan-ui/s-ui/util/common"
 
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"

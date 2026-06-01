@@ -34,6 +34,7 @@ Enhanced edition of [alireza0/s-ui](https://github.com/alireza0/s-ui) v1.4.1
 
 🚀 安装或升级到最新版本
 Linux/macOS
+
 bash <(curl -Ls https://raw.githubusercontent.com/admin8800/s-ui/main/install.sh)
 
 📦 安装旧版本

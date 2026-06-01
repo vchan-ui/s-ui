@@ -77,7 +77,7 @@ curl -fsSL https://get.docker.com | sh
 Docker Compose 部署
 services:
   s-ui:
-    image: ghcr.io/admin8800/s-ui
+    image: ghcr.io/vchan-ui/s-ui
     container_name: s-ui
     hostname: "s-ui"
     network_mode: host
@@ -86,6 +86,7 @@ services:
       - "./cert:/app/cert"
     restart: unless-stopped
 docker compose up -d
+  
 Docker 直接运行
 docker run -itd \
   --network host \

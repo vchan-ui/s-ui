@@ -4,7 +4,6 @@
 S-UI Pro Panel 为基于 [alireza0/s-ui](https://github.com/alireza0/s-ui) v1.4.1 的增强二次开发版本，在原有基础上进行了结构优化、界面升级与功能扩展。
 
 Enhanced edition of [alireza0/s-ui](https://github.com/alireza0/s-ui) v1.4.1
-
 > **免责声明：** 本项目仅用于学习与技术研究用途，请勿用于任何非法或违规用途。
 
 | 功能                           |        是否支持        |
@@ -35,7 +34,7 @@ Enhanced edition of [alireza0/s-ui](https://github.com/alireza0/s-ui) v1.4.1
 🚀 安装或升级到最新版本
 Linux/macOS
 
-bash <(curl -Ls https://raw.githubusercontent.com/admin8800/s-ui/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/vchan-ui/s-ui/main/install.sh)
 
 📦 安装旧版本
 
@@ -57,6 +56,7 @@ Windows
 解压文件
 管理员运行：
 install-windows.bat
+
 访问面板：
 http://localhost:2095/app
 ❌ 卸载 S-UI Pro
@@ -93,12 +93,12 @@ docker run -itd \
   -v $PWD/cert:/app/cert \
   --name s-ui \
   --restart=unless-stopped \
-  ghcr.io/admin8800/s-ui
+  ghcr.io/vchan-ui/s-ui
 </details>
 
 🧪 开发模式运行
 <details> <summary>点击查看详情</summary>
-git clone https://github.com/admin8800/s-ui
+git clone https://github.com/vchan-ui/s-ui
 cd s-ui
 ./runSUI.sh
 前端构建
@@ -132,6 +132,7 @@ certbot certonly --standalone \
 -d yourdomain.com \
 --non-interactive \
 --agree-tos
+
 🙏 致谢
 
 本项目基于：
